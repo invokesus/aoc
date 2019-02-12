@@ -12,7 +12,7 @@ day1b input = fst . head . filter (uncurry member) . zip list $ scanl (flip inse
 
 main :: IO()
 main = do
-  input <- readFile "/u/senso/personal/aoc/inputs/day1.txt"
+  input <- readFile "../inputs/day1.txt"
   let parsed_input = parse input
   print (day1a parsed_input)
   print (day1b parsed_input)

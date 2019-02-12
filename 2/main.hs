@@ -21,7 +21,7 @@ parse input = lines input
   
 main :: IO()
 main = do
-  input <- readFile "/u/senso/personal/aoc/inputs/day2.txt"
+  input <- readFile "../inputs/day2.txt"
   let parsed_input = parse input
   print (day2a parsed_input)
   print (day2b parsed_input)

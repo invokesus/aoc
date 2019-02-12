@@ -2,13 +2,12 @@
 
 with pkgs;
 
-stdenv.mkDerivation rec {
+mkShell {
   name = "aoc-env";
-  env = buildEnv { name = name; paths = buildInputs; };
   buildInputs = [
     python36
     guile
-    rustc
     ghc
+    haskellPackages.attoparsec
     ];
 }
